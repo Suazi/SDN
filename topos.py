@@ -44,7 +44,7 @@ class SpineLeaf(Topo):
 
         # Create hosts in rack
         for n in irange(1, hosts_per_rack):
-            host = self.addHost('h%sr%s' % (n, rack_nr), ip)
+            host = self.addHost('h%sr%s' % (n, rack_nr))
             hosts.append(host)
             # if rack_nr in self.rack:
             #     self.rack.update({rack_nr : })

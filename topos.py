@@ -20,7 +20,9 @@ class SpineLeaf(Topo):
         # Create racks
         for n in irange(1, num_racks):
             # build_rack() returns list of leaf switches
-            leaf_switches.append(self.build_rack_diff_ip(n, hosts_per_rack, sw_per_rack))
+            leaf_switches.append(self.build_rack(n, hosts_per_rack, sw_per_rack))
+            #_diff_ip makes each rack in different subnet
+            #leaf_switches.append(self.build_rack_diff_ip(n, hosts_per_rack, sw_per_rack))
 
         # Create links between spine and leaf (ToR) switches
         # print spine_switches

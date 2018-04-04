@@ -1,0 +1,157 @@
+{
+    "devices": [
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50682",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000061",
+            "driver": "ovs",
+            "chassisId": "61",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50674",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000051",
+            "driver": "ovs",
+            "chassisId": "51",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50680",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000081",
+            "driver": "ovs",
+            "chassisId": "81",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50684",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000071",
+            "driver": "ovs",
+            "chassisId": "71",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50676",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000021",
+            "driver": "ovs",
+            "chassisId": "21",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50678",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000011",
+            "driver": "ovs",
+            "chassisId": "11",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50688",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000041",
+            "driver": "ovs",
+            "chassisId": "41",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50690",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000031",
+            "driver": "ovs",
+            "chassisId": "31",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        },
+        {
+            "hw": "Open vSwitch",
+            "available": false,
+            "role": "NONE",
+            "sw": "2.0.2",
+            "type": "SWITCH",
+            "annotations": {
+                "managementAddress": "192.168.139.131",
+                "channelId": "192.168.139.131:50686",
+                "protocol": "OF_10"
+            },
+            "id": "of:0000000000000001",
+            "driver": "ovs",
+            "chassisId": "1",
+            "serial": "None",
+            "mfr": "Nicira, Inc."
+        }
+    ]
+}

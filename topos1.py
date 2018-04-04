@@ -6,7 +6,7 @@ from collections import defaultdict
 class SpineLeaf(Topo):
     """Spine - Leaf data center topology"""
 
-    def build(self, num_spine_sw=4, num_racks=8, hosts_per_rack=4, sw_per_rack=1):
+    def build(self, num_spine_sw=1, num_racks=8, hosts_per_rack=1, sw_per_rack=1):
         "Build network from racks and spine switches"
         spine_switches = []
         leaf_switches = []
@@ -46,6 +46,11 @@ class SpineLeaf(Topo):
         for n in irange(1, hosts_per_rack):
             host = self.addHost('h%sr%s' % (n, rack_nr))
             hosts.append(host)
+            # if rack_nr in self.rack:
+            #     self.rack.update({rack_nr : })
+            #     self.rack[rack_nr].append(host)
+            # else:
+            #     self.rack[rack_nr] = [host]
             self.racks[rack_nr].append(host)
 
         # Create links between ToR switches and hosts
@@ -71,9 +76,13 @@ class SpineLeaf(Topo):
 
         # Create hosts in rack
         for n in irange(1, hosts_per_rack):
-            host = self.addHost('h%sr%s' % (n, rack_nr), ip='10.0.%d.%d/24' % (rack_nr, 100 + n), 
-                                defaultRoute='via 10.0.%d.1' % rack_nr)
+            host = self.addHost('h%sr%s' % (n, rack_nr), ip='10.0.%d.%d/24' % (rack_nr, 100 + n), defaultRoute='via 10.0.%d.1' % rack_nr)
             hosts.append(host)
+            # if rack_nr in self.rack:
+            #     self.rack.update({rack_nr : })
+            #     self.rack[rack_nr].append(host)
+            # else:
+            #     self.rack[rack_nr] = [host]
             self.racks[rack_nr].append(host)
 
         # Create links between ToR switches and hosts

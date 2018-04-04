@@ -1,0 +1,64 @@
+{
+    "ports" : {
+        "of:0000000000000001/4" : {
+            "interfaces" : [
+                {
+                    "ips"  : [ "10.0.1.1/24", "10.0.5.1/24", "10.0.6.1/24", "10.0.7.1/24", "10.0.8.1/24", "10.0.2.1/24", "10.0.3.1/24", "10.0.4.1/24" ],
+                    "mac"  : "00:00:00:00:00:01"
+                }
+            ]
+        }
+    },
+
+    "apps" : {
+       "org.onosproject.reactive.routing" : {
+            "reactiveRouting" : {
+                "ip4LocalPrefixes" : [
+                    {
+                        "ipPrefix" : "10.0.1.0/24",
+                        "type" : "PUBLIC",
+                        "gatewayIp" : "10.0.1.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.2.0/24",
+                        "type" : "PUBLIC",
+                        "gatewayIp" : "10.0.2.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.3.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.3.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.4.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.4.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.5.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.5.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.6.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.6.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.7.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.7.1"
+                    },
+                    {
+                        "ipPrefix" : "10.0.8.0/24",
+                        "type" : "PRIVATE",
+                        "gatewayIp" : "10.0.8.1"
+                    }
+                ],
+                "ip6LocalPrefixes" : [
+                ],
+                "virtualGatewayMacAddress" : "00:00:00:00:00:01"
+            }
+        }
+    }
+}

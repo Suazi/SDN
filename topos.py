@@ -96,9 +96,6 @@ class SpineLeaf(Topo):
 
 
 
-
-
-
 # Allows the file to be imported using 'mn --custom <filename> --topo toponame'
 topos = {
     'spine_leaf': SpineLeaf

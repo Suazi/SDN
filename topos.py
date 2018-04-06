@@ -6,7 +6,7 @@ from collections import defaultdict
 class SpineLeaf(Topo):
     """Spine - Leaf data center topology"""
 
-    def build(self, num_spine_sw=4, num_racks=8, hosts_per_rack=4, sw_per_rack=1):
+    def build(self, num_spine_sw=2, num_racks=8, hosts_per_rack=2, sw_per_rack=1):
         "Build network from racks and spine switches"
         spine_switches = []
         leaf_switches = []
@@ -20,9 +20,9 @@ class SpineLeaf(Topo):
         # Create racks
         for n in irange(1, num_racks):
             # build_rack() returns list of leaf switches
-            leaf_switches.append(self.build_rack(n, hosts_per_rack, sw_per_rack))
+            # leaf_switches.append(self.build_rack(n, hosts_per_rack, sw_per_rack))
             #_diff_ip makes each rack in different subnet
-            #leaf_switches.append(self.build_rack_diff_ip(n, hosts_per_rack, sw_per_rack))
+            leaf_switches.append(self.build_rack_diff_ip(n, hosts_per_rack, sw_per_rack))
 
         # Create links between spine and leaf (ToR) switches
         # print spine_switches

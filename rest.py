@@ -3,18 +3,17 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 
-class OnosRest():
+class OnosRestAPI():
 
     def __init__(self):
         self.controller_ip = '192.168.139.130'
         self.api_url = 'http://%s:8181/onos/v1' % self.controller_ip
-        self.credentials = ('onos', 'rocks')
+        self.credentials = ('sdn', 'password')
 
     def get_devices(self):
         "Returns network devices file"
 
         url = self.api_url + '/devices'
-        print(url)
         response = requests.get(url, auth=self.credentials)
         return response.json()
 
@@ -22,7 +21,6 @@ class OnosRest():
         "Returns network devices file"
 
         url = self.api_url + '/hosts'
-        print(url)
         response = requests.get(url, auth=self.credentials)
         return response.json()
 
@@ -41,7 +39,7 @@ class OnosRest():
         config_file = json.dumps(self.load_json(cfg_path))
 
         response = requests.post(url, data=config_file, 
-                                headers={"Content-Type": "application/json, Accept: application/json"})
+                                 headers={"Content-Type": "application/json, Accept: application/json"})
 
     def load_json(self, path):
         "Loads json from file"
@@ -65,6 +63,12 @@ class OnosRest():
                 print('Deleting device with id: ' + device['id'])
                 self.del_device(device['id'])
 
+    def delete_all_devices(self):
+        devices = self.get_devices()
+        for device in devices['devices']:
+            print('Deleting device with id: ' + device['id'])
+            self.del_device(device['id'])
+
     def get_all_flows(self):
         url = self.api_url + '/flows'
         response = requests.get(url, auth=self.credentials)
@@ -84,8 +88,10 @@ class OnosRest():
 
 
 
-controller = OnosRest()
+controller = OnosRestAPI()
+print(json.dumps(controller.get_network_config(), indent=4))
+# controller.delete_all_devices()
 # print(json.dumps(controller.get_all_flows(), indent=4))
 # print(json.dumps(controller.get_devices(), indent=4))
-
+# print(json.dumps(controller.get_hosts(), indent=4))
 

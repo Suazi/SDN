@@ -1,0 +1,88 @@
+{    
+    "devices": {
+        "of:0000000000000001": {
+            "basic": {
+                "name": "Spine_01",
+                "latitude": 46,
+                "longitude": -105
+            }
+        },
+        "of:0000000000000002": {
+            "basic": {
+                "name": "Spine_02",
+                "latitude": 46,
+                "longitude": -95
+            }
+        },
+        "of:0000000000000003": {
+            "basic": {
+                "name": "Spine_03",
+                "latitude": 46,
+                "longitude": -85
+            }
+        },
+        "of:0000000000000004": {
+            "basic": {
+                "name": "Spine_04",
+                "latitude": 46,
+                "longitude": -75
+            }
+        },
+        "of:0000000000000011": {
+            "basic": {
+                "name": "Leaf_01",
+                "latitude": 37.5,
+                "longitude": -107.5
+            }
+        },
+        "of:0000000000000021": {
+            "basic": {
+                "name": "Leaf_02",
+                "latitude": 37.5,
+                "longitude": -102.5
+            }
+        },
+        "of:0000000000000031": {
+            "basic": {
+                "name": "Leaf_03",
+                "latitude": 37.5,
+                "longitude": -97.5
+            }
+        },
+        "of:0000000000000041": {
+            "basic": {
+                "name": "Leaf_04",
+                "latitude": 37.5,
+                "longitude": -92.5
+            }
+        },
+        "of:0000000000000051": {
+            "basic": {
+                "name": "Leaf_05",
+                "latitude": 37.5,
+                "longitude": -87.5
+            }
+        },
+        "of:0000000000000061": {
+            "basic": {
+                "name": "Leaf_06",
+                "latitude": 37.5,
+                "longitude": -82.5
+            }
+        },
+        "of:0000000000000071": {
+            "basic": {
+                "name": "Leaf_07",
+                "latitude": 37.5,
+                "longitude": -77.5
+            }
+        },
+        "of:0000000000000081": {
+            "basic": {
+                "name": "Leaf_08",
+                "latitude": 37.5,
+                "longitude": -72.5
+            }
+        }
+    }
+}

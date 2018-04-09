@@ -6,7 +6,7 @@ from collections import defaultdict
 class SpineLeaf(Topo):
     """Spine - Leaf data center topology"""
 
-    def build(self, num_spine_sw=2, num_racks=8, hosts_per_rack=4, sw_per_rack=1):
+    def build(self, num_spine_sw=4, num_racks=8, hosts_per_rack=4, sw_per_rack=1):
         "Build network from racks and spine switches"
         spine_switches = []
         leaf_switches = []

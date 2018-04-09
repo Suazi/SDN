@@ -85,6 +85,7 @@ class OnosRest():
 
 
 controller = OnosRest()
+controller.de
 # print(json.dumps(controller.get_all_flows(), indent=4))
 # print(json.dumps(controller.get_devices(), indent=4))
 
